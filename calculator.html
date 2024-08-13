@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ar = [];
+        let calculator = {
+            read(){
+                a = +prompt("Enter the value a",0),
+                b = +prompt("Enter the value b",0) 
+            },
+            add(){
+                ar.push(a+b)
+                console.log(a+b)
+            },
+            sub(){
+                ar.push(a-b)
+                return  a-b;
+            },
+            mul(){
+                ar.push (a*b)
+                return  a*b;
+            }
+        }
+            calculator.read();
+            calculator.add();
+            console.log(calculator.sub());
+            console.log(calculator.mul());
+            console.log(ar);
+    </script>
+</body>
+</html>

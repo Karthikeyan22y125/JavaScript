@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bank ={
+            name:"Bharani",
+            balance:10000,
+            Withdraw(amt,balance){
+                if(amt<balance){
+                    this.balance = balance - amt;
+                }else
+                    console.log("Insufficent Balance"); 
+            },
+            deposite(amt,balance){
+                this.balance=balance+amt;
+            }
+            }
+            console.log(bank.name);
+            console.log(bank.balance);
+            bank.Withdraw(3000,bank.balance);
+            console.log(bank.balance);
+            bank.deposite(500,bank.balance);
+            console.log(bank.balance);
+            bank.Withdraw(10000,bank.balance);
+            bank.deposite(5000,bank.balance);
+            console.log(bank.balance);
+        
+    </script>
+</body>
+</html>

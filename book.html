@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let book = {
+            title: "Dance of Dragons",
+            author: "R.R.Martin",
+            yearofpublish: 1990,
+            age :  function(){
+            console.log(2024 - Number(book.yearofpublish));
+            },
+            getSummary: function(){
+            console.log("The fight between the elder sister and her brother where they loss all their dragons many loss their lifes, million of them died ");
+        }
+        }
+        book.getSummary();
+        book.age();
+    </script>
+</body>
+</html>
