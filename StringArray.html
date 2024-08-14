@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = ["bharanidharan","Karthikeyan","Munish","Mirinmano"];
+        let length = name.map(len);
+        function len(n){
+            return n.length;
+        }
+        console.log(name);
+        console.log(length);
+        name.splice(2,1,'Replaced!');
+        console.log(name);
+
+        let newarr = name.slice(1,4);
+        console.log(newarr);
+        
+
+        let arr = ["apple",'orange','area','aeroplane','elephant'];
+        let as = arr.filter(starta);
+        function starta(a){
+            if(a[0] == 'a')
+                return a;
+        }
+        console.log(as);
+    </script>
+</body>
+</html>

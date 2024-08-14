@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [3,5,7,8,2,7];
+        let b = a.map(square);
+        console.log(a);
+        console.log(b);
+        function square(n){
+            return n*n;
+        }
+
+        
+        let c =[5,3,4,6,8,1];
+        let f = c.filter(even);
+        console.log(f);
+        a=a.concat(f);
+        console.log(a);
+        function even(x){
+            if(x%2==0)
+                return x;
+        }
+    </script>
+</body>
+</html>
